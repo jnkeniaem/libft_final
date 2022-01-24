@@ -6,7 +6,7 @@
 /*   By: jeekim <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/08 17:37:24 by jeekim            #+#    #+#             */
-/*   Updated: 2021/12/14 14:51:03 by jeekim           ###   ########.fr       */
+/*   Updated: 2021/12/13 12:57:18 by jeekim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		ft_lstdelone(cur, del);
 		cur = cur->next;
 	}
+	*lst = NULL;
 }
